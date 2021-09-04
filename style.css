@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#back{
+    width: 100%;
+    height: 100%;
+    padding: 20px 180px;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(161, 255, 161);
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(46, 119, 46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+.timer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+.timer:nth-child(3){
+    margin-right: 0;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:rgb(161, 255, 161);
+    color: green;
+    margin-left: 20px;
+}
+.timer h4{
+    font-family: "Product sans";
+    font-size: 20px;
+    color: white;
+}
+.box h4{
+    color: green;
+}
+#bubble-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 525px;
+    padding: 30px;
+    flex-wrap: wrap;
+    font-family: "Product sans";
+font-size: 40px;
+font-weight: 900;
+}
+#bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-family: "Product sans";
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+@media(max-width:500px){
+    #back{
+        padding: 0px;
+    
+    }
+    nav{
+        padding: 0px 10px;
+    }
+    .timer h4{
+        font-size: 15px;
+    }
+.box{
+    padding: 0px 15px;
+}
+    #main{
+        height: 100vh;
+        overflow: hidden;
+    }
+    #bubble{
+        margin-bottom: 12px;
+        margin-right: 5px;
+    }
+    #bubble-box{
+        font-size: 26px;
+    }
+}
